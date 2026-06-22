@@ -23,4 +23,6 @@ let shopSchema = mongoose.Schema({
   },
 });
 
-export default mongoose.model("Shop", shopSchema);
+const Shop = mongoose.model("Shop", shopSchema);
+
+export default Shop;

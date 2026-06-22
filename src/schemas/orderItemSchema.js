@@ -22,4 +22,6 @@ let orderItemSchema = mongoose.Schema({
   },
 });
 
-export default mongoose.model("OrderItem", orderItemSchema);
+const OrderItem = mongoose.model("OrderItem", orderItemSchema);
+
+export default OrderItem;
