@@ -2,7 +2,8 @@ import mongoose from "mongoose";
 
 let shopSchema = mongoose.Schema({
   vendorId: {
-    type: String,
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
     required: [true, "Vendor Id is required."],
   },
   name: {
